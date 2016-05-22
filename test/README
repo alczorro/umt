@@ -1,0 +1,5 @@
+The tests for services, which are not unit tests actually, are moved
+here. 
+
+Run this project when you want to test the umt services which have
+been deployed at a tomcat.
