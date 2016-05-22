@@ -21,40 +21,30 @@
       <version>1.0.0</version>
     </dependency>
     <dependency>
-      <groupId>mysql</groupId>
+      <groupId>com.mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>6.0.2</version>
+      <version>3.0.14</version>
     </dependency>
-    <!-- <dependency> -->
-    <!--   <groupId>com.octo</groupId> -->
-    <!--   <artifactId>filter</artifactId> -->
-    <!--   <version>2.0</version> -->
-    <!-- </dependency> -->
-    <!-- <dependency> -->
-    <!--   <groupId>com.octo</groupId> -->
-    <!--   <artifactId>jcaptcha-alpha</artifactId> -->
-    <!--   <version>2.0</version> -->
-    <!-- </dependency> -->
-    <!-- <dependency> -->
-    <!--   <groupId>com.octo</groupId> -->
-    <!--   <artifactId>jcaptcha-api</artifactId> -->
-    <!--   <version>1.0</version> -->
-    <!-- </dependency> -->
-    <!-- <dependency> -->
-    <!--   <groupId>com.octo</groupId> -->
-    <!--   <artifactId>jcaptcha-intergration</artifactId> -->
-    <!--   <version>2.0</version> -->
-    <!-- </dependency> -->
-    <!-- <dependency> -->
-    <!--   <groupId>com.qq</groupId> -->
-    <!--   <artifactId>SDK4J</artifactId> -->
-    <!--   <version>2.0</version> -->
-    <!-- </dependency> -->
-    <!-- <dependency> -->
-    <!--   <groupId>com.sun</groupId> -->
-    <!--   <artifactId>mail</artifactId> -->
-    <!--   <version>1.4</version> -->
-    <!-- </dependency> -->
+    <dependency>
+      <groupId>com.octo</groupId>
+      <artifactId>jcaptcha-alpha</artifactId>
+      <version>2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.octo</groupId>
+      <artifactId>jcaptcha-api</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.octo</groupId>
+      <artifactId>jcaptcha-integration</artifactId>
+      <version>2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.qq</groupId>
+      <artifactId>SDK4j</artifactId>
+      <version>2.0</version>
+    </dependency>
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
       <artifactId>xstream</artifactId>
@@ -143,11 +133,6 @@
       <version>1.1.4</version>
     </dependency>
     <dependency>
-      <groupId>javax.servlet.jsp</groupId>
-      <artifactId>jsp-api</artifactId>
-      <version>2.2</version>
-    </dependency>
-    <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
@@ -174,56 +159,46 @@
       <version>1.9.6.2</version>
     </dependency>
     <!-- local duckling -->
-    <!-- <dependency> -->
-    <!--   <groupId>net.duckling.falcon</groupId> -->
-    <!--   <artifactId>falcon-api</artifactId> -->
-    <!--   <version>0.3.4.snapshot</version> -->
-    <!-- </dependency> -->
-    <!-- <dependency> -->
-    <!--   <groupId>net.duckling</groupId> -->
-    <!--   <artifactId>clb</artifactId> -->
-    <!--   <version>6.2.0</version> -->
-    <!-- </dependency> -->
-    <!-- <dependency> -->
-    <!--   <groupId>net.duckling</groupId> -->
-    <!--   <artifactId>duckling-common</artifactId> -->
-    <!--   <version>6.0.6</version> -->
-    <!-- </dependency> -->
-    <!-- <dependency> -->
-    <!--   <groupId>net.duckling</groupId> -->
-    <!--   <artifactId>duckling-utils</artifactId> -->
-    <!--   <version>1.1.5</version> -->
-    <!-- </dependency> -->
-    <!-- <dependency> -->
-    <!--   <groupId>net.duckling</groupId> -->
-    <!--   <artifactId>falcon-xss</artifactId> -->
-    <!--   <version>0.3.5-SNAPSHOT</version> -->
-    <!-- </dependency> -->
-    <!-- <dependency> -->
-    <!--   <groupId>net.duckling</groupId> -->
-    <!--   <artifactId>frmwork</artifactId> -->
-    <!--   <version>1.1.1</version> -->
-    <!-- </dependency> -->
-    <!-- <dependency> -->
-    <!--   <groupId>net.duckling</groupId> -->
-    <!--   <artifactId>uaf-common</artifactId> -->
-    <!--   <version>0.1.1</version> -->
-    <!-- </dependency> -->
-    <!-- <dependency> -->
-    <!--   <groupId>net.duckling</groupId> -->
-    <!--   <artifactId>version</artifactId> -->
-    <!--   <version>1.0.0</version> -->
-    <!-- </dependency> -->
-    <!-- <dependency> -->
-    <!--   <groupId>net.duckling</groupId> -->
-    <!--   <artifactId>vmt</artifactId> -->
-    <!--   <version>7.1.2b</version> -->
-    <!-- </dependency> -->
-    <!-- <dependency> -->
-    <!--   <groupId>net.duckling</groupId> -->
-    <!--   <artifactId>websso</artifactId> -->
-    <!--   <version>1.0</version> -->
-    <!-- </dependency> -->
+    <dependency>
+      <groupId>net.duckling</groupId>
+      <artifactId>falcon-cache</artifactId>
+      <version>0.4.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>net.duckling</groupId>
+      <artifactId>clb-api</artifactId>
+      <version>6.4.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>net.duckling</groupId>
+      <artifactId>duckling-common</artifactId>
+      <version>6.0.6</version>
+    </dependency>
+    <dependency>
+      <groupId>net.duckling</groupId>
+      <artifactId>cloudy-utils</artifactId>
+      <version>1.1.5</version>
+    </dependency>
+   <dependency>
+      <groupId>net.duckling</groupId>
+      <artifactId>uaf-common</artifactId>
+      <version>1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>net.duckling</groupId>
+      <artifactId>version</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>net.duckling</groupId>
+      <artifactId>vmt-api</artifactId>
+      <version>7.2</version>
+    </dependency>
+    <dependency>
+      <groupId>net.duckling</groupId>
+      <artifactId>websso</artifactId>
+      <version>1.0</version>
+    </dependency>
     <dependency>
       <groupId>com.belerweb</groupId>
       <artifactId>pinyin4j</artifactId>
@@ -234,11 +209,6 @@
       <artifactId>spymemcached</artifactId>
       <version>2.12.0</version>
     </dependency>
-    <!-- <dependency> -->
-    <!--   <groupId>opensymphony</groupId> -->
-    <!--   <artifactId>oscache</artifactId> -->
-    <!--   <version>2.4.1</version> -->
-    <!-- </dependency> -->
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
@@ -247,26 +217,16 @@
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpcore</artifactId>
-      <version>4.1.4</version>
+      <version>4.4.4</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpmime</artifactId>
       <version>4.5</version>
     </dependency>
-    <!-- <dependency> -->
-    <!--   <groupId>org.apache.oro</groupId> -->
-    <!--   <artifactId>jakarta-oro</artifactId> -->
-    <!--   <version>2.0.7</version> -->
-    <!-- </dependency> -->
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-contrib</artifactId>
-      <version>3.0.1-FINAL</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.poi</groupId>
-      <artifactId>poi-scratchpad</artifactId>
       <version>3.0.1-FINAL</version>
     </dependency>
     <dependency>
@@ -307,21 +267,19 @@
       <version>20160212</version>
     </dependency>
     <dependency>
+      <groupId>org.json.simple</groupId>
+      <artifactId>json-simple</artifactId>
+      <version>1.1.2</version>
+    </dependency>
+    <dependency>
       <groupId>org.jsoup</groupId>
       <artifactId>jsoup</artifactId>
       <version>1.8.1</version>
     </dependency>
     <dependency>
-      <groupId>org.quartz-scheduler</groupId>
-      <artifactId>quartz</artifactId>
-      <version>2.2.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-jcl</artifactId>
-      <version>1.7.2</version>
-      <type>jar</type>
-      <scope>compile</scope>
+      <groupId>org.quartz</groupId>
+      <artifactId>quartz-all</artifactId>
+      <version>1.6.5</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.ldap</groupId>
@@ -363,26 +321,16 @@
       <artifactId>xpp3_min</artifactId>
       <version>1.1.4c</version>
     </dependency>
-    <!-- <dependency> -->
-    <!--   <groupId>smtpcstnet</groupId> -->
-    <!--   <artifactId>smtpcstnet-auth</artifactId> -->
-    <!--   <version>1.0</version> -->
-    <!-- </dependency> -->
     <dependency>
-      <groupId>taglibs</groupId>
-      <artifactId>standard</artifactId>
-      <version>1.1.2</version>
+      <groupId>tebie.applib</groupId>
+      <artifactId>apiclient</artifactId>
+      <version>1.6</version>
     </dependency>
-    <!-- <dependency> -->
-    <!--   <groupId>tebie.applib</groupId> -->
-    <!--   <artifactId>apiclient</artifactId> -->
-    <!--   <version>1.6</version> -->
-    <!-- </dependency> -->
-    <!-- <dependency> -->
-    <!--   <groupId>weibo4j</groupId> -->
-    <!--   <artifactId>weibo4j</artifactId> -->
-    <!--   <version>2.2</version> -->
-    <!-- </dependency> -->
+    <dependency>
+      <groupId>weibo4j</groupId>
+      <artifactId>weibo4j</artifactId>
+      <version>2.2</version>
+    </dependency>
     <dependency>
       <groupId>xalan</groupId>
       <artifactId>xalan</artifactId>
@@ -394,46 +342,6 @@
       <version>2.8.1</version>
     </dependency>
   </dependencies>
-
-  <!-- <repositories> -->
-  <!--   <repository> -->
-  <!--     <id>nexus-snapshot</id> -->
-  <!--     <name>Nexus-snapshot</name> -->
-  <!--     <url>http://nexus.cerc.cnic.cn/nexus/content/groups/cerc-snapshots</url> -->
-  <!--     <releases> -->
-  <!-- 	<enabled>true</enabled> -->
-  <!--     </releases> -->
-  <!--     <snapshots> -->
-  <!-- 	<enabled>true</enabled> -->
-  <!--     </snapshots> -->
-  <!--   </repository> -->
-  <!--   <repository> -->
-  <!--     <id>nexus</id> -->
-  <!--     <name>Nexus</name> -->
-  <!--     <url>http://10.10.1.49/nexus/content/groups/cerc/</url> -->
-  <!--     <releases> -->
-  <!-- 	<enabled>true</enabled> -->
-  <!--     </releases> -->
-  <!--     <snapshots> -->
-  <!-- 	<enabled>true</enabled> -->
-  <!--     </snapshots> -->
-  <!--   </repository> -->
-  <!-- </repositories> -->
-
-  <!-- <pluginRepositories> -->
-  <!--   <pluginRepository> -->
-  <!--     <id>nexus</id> -->
-  <!--     <name>Nexus</name> -->
-  <!--     <url>http://10.10.1.49/nexus/content/groups/cerc/</url> -->
-  <!--     <releases> -->
-  <!-- 	<enabled>true</enabled> -->
-  <!--     </releases> -->
-  <!--     <snapshots> -->
-  <!-- 	<enabled>true</enabled> -->
-  <!--     </snapshots> -->
-  <!--   </pluginRepository> -->
-  <!-- </pluginRepositories> -->
-
 
   <build>
     <finalName>umt</finalName>
@@ -452,6 +360,7 @@
 	<configuration>
 	  <source>1.7</source>
 	  <target>1.7</target>
+	  <encoding>UTF-8</encoding>
 	</configuration>
       </plugin>
       <plugin>
@@ -517,51 +426,6 @@
 	</executions>
       </plugin>
 
-       <!-- umt 无sharedlib -->
-       <!-- <plugin> -->
-       <!-- 	 <artifactId>maven-dependency-plugin</artifactId>  -->
-       <!-- 	 <version>2.4</version> -->
-       <!-- 	 <executions> -->
-       <!-- 	   <execution> -->
-       <!-- 	     <phase>compile</phase> -->
-       <!-- 	     <goals>  -->
-       <!-- 	       <goal>copy-dependencies</goal> -->
-       <!-- 	     </goals> -->
-       <!-- 	     <configuration> -->
-       <!-- 	       <outputDirectory>src/main/webapp/WEB-INF/lib</outputDirectory>  -->
-       <!-- 	       <excludeScope>provided</excludeScope> -->
-       <!-- 	     </configuration> -->
-       <!-- 	   </execution> -->
-       <!-- 	 </executions>  -->
-       <!-- </plugin> -->
-       <!-- <plugin> -->
-       <!-- 	 <artifactId>maven-clean-plugin</artifactId> -->
-       <!-- 	 <version>2.4.1</version>  -->
-       <!-- 	 <configuration> -->
-       <!-- 	   <filesets> -->
-       <!-- 	     <fileset> -->
-       <!-- 	       <directory>src/main/webapp/WEB-INF/lib</directory>  -->
-       <!-- 	       <followSymlinks>false</followSymlinks> -->
-       <!-- 	     </fileset> -->
-       <!-- 	   </filesets> -->
-       <!-- 	 </configuration>  -->
-       <!-- </plugin> -->
-
-
-      <!-- <plugin> -->
-      <!-- 	<groupId>org.codehaus.mojo</groupId> -->
-      <!-- 	<artifactId>tomcat-maven-plugin</artifactId> -->
-      <!-- 	<version>1.1</version> -->
-      <!-- 	<configuration> -->
-      <!-- 	  <url>http://159.226.10.99:8080/manager/text</url> -->
-      <!-- 	  <server>clive_ddl_server</server> -->
-      <!-- 	  <username>admin</username> -->
-      <!-- 	  <password>password</password> -->
-      <!-- 	  <path>/dct</path> -->
-      <!-- 	</configuration> -->
-      <!-- </plugin> -->
-
-      <!-- 配置多个src目录 -->
       <plugin>
 	<groupId>org.codehaus.mojo</groupId>
 	<artifactId>build-helper-maven-plugin</artifactId>
