@@ -10,3 +10,5 @@ UMT部署
 3、配置email服务器。
 
 4、启动tomcat即可。
+
+5、缺省的管理员账号是 admin@root.umt/1q2w3e4r.
