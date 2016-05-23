@@ -1,7 +1,8 @@
+-- For UMT version 8.1
 -- Based on the schema exported from the online system on 9 April 2016
--- @appleii 10Apr2016
+-- nankai@cnic.ac.cn 10Apr2016
 
--- Token tables NOT included. See "duckling_v7_oauth_token.sql"
+-- WRT token tables, see "inittokentables.sql"
 
 -- MySQL dump 10.13  Distrib 5.1.69, for redhat-linux-gnu (x86_64)
 --
@@ -540,14 +541,13 @@ CREATE TABLE `umt_user` (
 
 -- Dump completed on 2016-04-09 15:27:24
 
--- ----------------------------
--- Records
--- copied from old file "duckling_v7.sql"
--- ----------------------------
+--
+-- Initial Records
+--
 
-INSERT INTO `umt_role` VALUES ('1', 'admin', '����Ա');
+INSERT INTO `umt_role` VALUES ('1', 'admin', '管理员');
 INSERT INTO `umt_role_member` VALUES ('1', '1');
 INSERT INTO `umt_access_ips` VALUES(1,1,'127.0.0.1','B','to check later');
-INSERT INTO `umt_user`(`id`,`umt_id`,`cstnet_id`,`true_name`,`password`,`create_time`,`type`) VALUES (1,'10000001','admin@root.umt','admin','IQEN5D81apj+t3dUwdjsPmfxrms=',now(),'umt');
--- password is admin!
+INSERT INTO `umt_user`(`id`,`umt_id`,`cstnet_id`,`true_name`,`password`,`create_time`,`type`) VALUES (1,'10000001','admin@root.umt','admin','SO/EhR4VlAr11HfTwM6ZIRpwo74=',now(),'umt');
+-- password is 1q2w3e4r
 INSERT INTO `umt_login_name` VALUES ('1', '1', 'admin@root.umt', 'primary',null,null,'active');

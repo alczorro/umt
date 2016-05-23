@@ -36,7 +36,7 @@ public class CreateOauthTokenTable {
 		this.du=du;
 	}
 	public void createTable(ServletContext context){
-		String sqlFile = context.getRealPath("/WEB-INF/conf/duckling_v7_oauth_token.sql");
+		String sqlFile = context.getRealPath("/WEB-INF/conf/inittokentables.sql");
 		FileInputStream in;
 		try {
 			in = new FileInputStream(sqlFile);

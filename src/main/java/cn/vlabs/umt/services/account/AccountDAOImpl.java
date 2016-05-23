@@ -129,7 +129,7 @@ public class AccountDAOImpl implements IAccountDAO{
 		ResultSet rs = null;
 		try{
 			String sql= "select distinct uid, country,province,city from umt_log{0} where uid=? and eventType='"+UMTLog.EVENT_TYPE_LOG_IN+"' and country is not null and province is not null and city is not null order by id";
-			pst = conn.prepareStatement(sql.replace("{0}", config.getBooleanProp("is.myself.log.spilit", false)?"_"+uid%hashLength:""));
+			pst = conn.prepareStatement(sql.replace("{0}", config.getBooleanProp("is.myself.log.split", false)?"_"+uid%hashLength:""));
 			int index=0;
 			pst.setInt(++index, uid);
 			rs=pst.executeQuery();

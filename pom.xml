@@ -26,6 +26,12 @@
       <version>3.0.14</version>
     </dependency>
     <dependency>
+      <groupId>com.jhlabs</groupId>
+      <artifactId>filters</artifactId>
+      <version>2.0.235-1</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
       <groupId>com.octo</groupId>
       <artifactId>jcaptcha-alpha</artifactId>
       <version>2.0</version>
@@ -141,6 +147,13 @@
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>3.1.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>jsp-api</artifactId>
+      <version>2.2</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -163,6 +176,18 @@
       <groupId>net.duckling</groupId>
       <artifactId>falcon-cache</artifactId>
       <version>0.4.0-SNAPSHOT</version>
+      <exclusions>
+	<exclusion>
+	  <groupId>javax.servlet</groupId>
+	  <artifactId>servlet-api</artifactId>
+	</exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>net.duckling</groupId>
+      <artifactId>falcon-mstatic</artifactId>
+      <version>0.4.0-SNAPSHOT</version>
+      <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>net.duckling</groupId>
@@ -346,11 +371,14 @@
   <build>
     <finalName>umt</finalName>
     
-    <resources>
-      <resource>
-	<directory>src/main/resources_duckling_ext</directory>
-      </resource>
-    </resources>
+    <!-- <resources> -->
+    <!--   <resource> -->
+    <!-- 	<directory>src/main/resources_duckling_ext</directory> -->
+    <!--   </resource> -->
+    <!--   <resource> -->
+    <!-- 	<directory>src/main/resources</directory> -->
+    <!--   </resource> -->
+    <!-- </resources> -->
 
     <plugins>
       <plugin>

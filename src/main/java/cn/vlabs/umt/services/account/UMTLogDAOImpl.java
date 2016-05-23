@@ -73,7 +73,7 @@ public class UMTLogDAOImpl implements IUMTLogDAO{
 		PreparedStatement pst = null;
 		ResultSet rs = null;
 		try{
-			pst = conn.prepareStatement((SELECT_SQL+BY_UID+" and id<? order by id desc limit 1").replace("{0}", config.getBooleanProp("is.myself.log.spilit", false)?"_"+uid%hashLength:""));
+			pst = conn.prepareStatement((SELECT_SQL+BY_UID+" and id<? order by id desc limit 1").replace("{0}", config.getBooleanProp("is.myself.log.split", false)?"_"+uid%hashLength:""));
 			int index=0;
 			pst.setInt(++index, uid);
 			pst.setInt(++index, logId);
@@ -96,7 +96,7 @@ public class UMTLogDAOImpl implements IUMTLogDAO{
 		PreparedStatement pst = null;
 		ResultSet rs = null;
 		try{
-			pst = conn.prepareStatement((SELECT_SQL+BY_ID+BY_UID).replace("{0}", config.getBooleanProp("is.myself.log.spilit", false)?"_"+uid%hashLength:""));
+			pst = conn.prepareStatement((SELECT_SQL+BY_ID+BY_UID).replace("{0}", config.getBooleanProp("is.myself.log.split", false)?"_"+uid%hashLength:""));
 			int index=0;
 			pst.setInt(++index, logId);
 			pst.setInt(++index, uid);
@@ -122,7 +122,7 @@ public class UMTLogDAOImpl implements IUMTLogDAO{
 		PreparedStatement pst = null;
 		ResultSet rs = null;
 		try{
-			pst = conn.prepareStatement(LOG_SQL.replace("{0}", config.getBooleanProp("is.myself.log.spilit", false)?"_"+umtLog.getUid()%hashLength:""));
+			pst = conn.prepareStatement(LOG_SQL.replace("{0}", config.getBooleanProp("is.myself.log.split", false)?"_"+umtLog.getUid()%hashLength:""));
 			int index=0;
 			pst.setString(++index, umtLog.getEventType());
 			pst.setString(++index, umtLog.getAppName());
@@ -195,7 +195,7 @@ public class UMTLogDAOImpl implements IUMTLogDAO{
 		PreparedStatement pst = null;
 		ResultSet rs = null;
 		try{
-			pst = conn.prepareStatement(SELECT_SQL.replace("{0}", config.getBooleanProp("is.myself.log.spilit", false)?"_"+uid%hashLength:"")+BY_UID+BY_EVENT_TYPE+ORDER_BY_OCCUR_TIME+TOP_TEN);
+			pst = conn.prepareStatement(SELECT_SQL.replace("{0}", config.getBooleanProp("is.myself.log.split", false)?"_"+uid%hashLength:"")+BY_UID+BY_EVENT_TYPE+ORDER_BY_OCCUR_TIME+TOP_TEN);
 			int index=0;
 			pst.setInt(++index, uid);
 			pst.setString(++index, eventType);
@@ -222,7 +222,7 @@ public class UMTLogDAOImpl implements IUMTLogDAO{
 		PreparedStatement pst = null;
 		ResultSet rs = null;
 		try{
-			pst = conn.prepareStatement(UPDATE_SQL.replace("{0}", config.getBooleanProp("is.myself.log.spilit", false)?"_"+uid%hashLength:"")+BY_ID+BY_UID);
+			pst = conn.prepareStatement(UPDATE_SQL.replace("{0}", config.getBooleanProp("is.myself.log.split", false)?"_"+uid%hashLength:"")+BY_ID+BY_UID);
 			int index=0;
 			pst.setString(++index, "true");
 			pst.setInt(++index, logId);
@@ -243,7 +243,7 @@ public class UMTLogDAOImpl implements IUMTLogDAO{
 		PreparedStatement pst = null;
 		ResultSet rs = null;
 		try{
-			pst = conn.prepareStatement(sql.replace("{0}", config.getBooleanProp("is.myself.log.spilit", false)?"_"+log.getUid()%hashLength:""));
+			pst = conn.prepareStatement(sql.replace("{0}", config.getBooleanProp("is.myself.log.split", false)?"_"+log.getUid()%hashLength:""));
 			int index=0;
 			pst.setString(++index, log.getCountry());
 			pst.setString(++index, log.getProvince());

@@ -35,7 +35,7 @@ public class CreateTable {
 		this.du=du;
 	}
 	public void createTable(ServletContext context){
-		String sqlFile = context.getRealPath("/WEB-INF/conf/duckling_v7.sql");
+		String sqlFile = context.getRealPath("/WEB-INF/conf/inittables.sql");
 		FileInputStream in;
 		try {
 			in = new FileInputStream(sqlFile);
