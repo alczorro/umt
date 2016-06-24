@@ -44,14 +44,15 @@ public class  MessageSender {
 		this.authenticator = new EmailAuthenticator(username, password);
 		this.mailhost = emailConfig.getSmtp();
 		this.formatter=new MessageFormatter(config.getMappedPath("mail.temlate.dir", "/WEB-INF/message")); 
-		this.mailbox = config.getStringProp("mail.boxname", "document@cnic.cn");
+		this.mailbox = config.getStringProp("mail.boxname", "");
 	}
 	
 	private EmailConfig getEmailConfig(Config config) {
 		EmailConfig emailConfig = new EmailConfig();
-		String smtp = config.getStringProp(EmailTemplate.CONFIG_SMTP, "smtp.cnic.cn");
-		String email = config.getStringProp(EmailTemplate.CONFIG_EMAIL, "document@cnic.cn");
-		String pass = config.getStringProp(EmailTemplate.CONFIG_PASSWORD, "111111");
+		String smtp = config.getStringProp(EmailTemplate.CONFIG_SMTP, "");
+		String email = config.getStringProp(EmailTemplate.CONFIG_EMAIL, "");
+		String pass = config.getStringProp(EmailTemplate.CONFIG_PASSWORD, "");
+
 		emailConfig.setEmail(email);
 		emailConfig.setSmtp(smtp);
 		emailConfig.setPassword(pass);

@@ -48,7 +48,8 @@ public class UserOldServiceTest {
 	//测试一下coreMail有，umt没有的用户，isExists()和getUMTUser()
 	@Test
 	public void testCoreMail()throws Exception{
-		String username="zzxx@cstnet.cn";
+		String username="zzxx@xxx.xx";
+
 		UMTUser user =userService.getUMTUser(username);
 		if("11".equals(user.getTruename())){
 			System.out.println("first coreMail getUMT");
@@ -67,15 +68,17 @@ public class UserOldServiceTest {
 	}
 	@Test
 	public void testLogin(){
-		UserPrincipal up=(userService.login("haha@cstnet.cn", "fufyddns111"));
+		UserPrincipal up=(userService.login("haha@xxx.xx", "fufyddns111"));
 		Assert.assertEquals("123123", up.getDisplayName());
-		Assert.assertEquals("haha@cstnet.cn",up.getEmail());
-		Assert.assertEquals("haha@cstnet.cn",up.getName());
+		Assert.assertEquals("haha@xxx.xx",up.getEmail());
+		Assert.assertEquals("haha@xxx.xx",up.getName());
+
 		Assert.assertEquals("", up.getAuthBy());
 	}
 	@Test 
 	public void testIsExistsArray(){
-		boolean[] result=userService.isExist(new String[]{"haha@cstnet.cn","zzxx@cstnet.cn","234"});
+		boolean[] result=userService.isExist(new String[]{"haha@xxx.xx","zzxx@xxx.xx","234"});
+
 		Assert.assertTrue(result[0]);
 		Assert.assertTrue(result[1]);
 		Assert.assertFalse(result[2]);

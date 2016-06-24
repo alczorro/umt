@@ -66,9 +66,10 @@ public class EditTemplateController {
 	
 	private EmailConfig getEmailConfig() {
 		EmailConfig emailConfig = new EmailConfig();
-		String smtp = config.getStringProp(EmailTemplate.CONFIG_SMTP, "smtp.cnic.cn");
-		String email = config.getStringProp(EmailTemplate.CONFIG_EMAIL, "document@cnic.cn");
-		String pass = config.getStringProp(EmailTemplate.CONFIG_PASSWORD, "111111");
+		String smtp = config.getStringProp(EmailTemplate.CONFIG_SMTP, "");
+		String email = config.getStringProp(EmailTemplate.CONFIG_EMAIL, "");
+		String pass = config.getStringProp(EmailTemplate.CONFIG_PASSWORD, "");
+
 		emailConfig.setEmail(email);
 		emailConfig.setSmtp(smtp);
 		emailConfig.setPassword(pass);
