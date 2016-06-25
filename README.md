@@ -12,8 +12,8 @@ clb-api, etc. can be downloaded and built (mvn install) from the same
 account 'duckling-falcon' at Github.
 
 * frmwrk
-* falcon/common,cache,mstatic
 * clb/clb-api
+* falcon/common,cache,mstatic
 * umt/umt-api
 * vmt/vmt-api
 
@@ -21,5 +21,14 @@ NOTICE: vmt-api depends on umt-api so that umt-api must be installed first.
 
 The 'umt.war' could be made by 'mvn package'.
 
-Please check 'Install.txt' for how to deploy and config (in Chinese).
+With umt.war, 1) Setup tomcat and unpack umt.war. Edit
+server.xml/ROOT.xml for "<Host>", "appBase", "xmlBase", and
+"docBase". UMT need to be deployed as the ROOT app.  
 
+2) In WEB-INF/conf, copy umt-TEMPLATE.properties to umt.properties,
+and edit umt.properties with right info regarding mysql databases and
+the email account.
+
+3) Create databases in mysql. Tables will be created automatically.
+
+4) Start tomcat and enjoy!
